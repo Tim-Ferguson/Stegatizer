@@ -1,0 +1,57 @@
+<!doctype HTML>
+<HEAD>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script type='text/javascript' src="stuff.js"></script>
+	<script>
+	
+	</script>
+	<TITLE>Steg JS</TITLE>
+	<META NAME="Description" CONTENT="A tool written in javascript, to use Steganography.">
+	<META NAME="Keywords" CONTENT="Steganography, encryption, hiding, messages, javascript, local steganography">
+	<META NAME="Author" CONTENT="Tim Ferguson">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</HEAD>
+<BODY BACKGROUND="" TEXT="#AAAAAA" LINK="#000080" VLINK="#800080" ALINK="#FF0000">
+
+ 
+	<h1 align='center'>
+		Steganography is the art and science of hiding a message in plain site. 
+	</h1>
+	
+	<br><br><br><br><br>
+	<p>Upload an image here to decrypt a hidden message!</p>
+	<input type="file" name="Steg'd photo" value="Click here to decrypt a Steg'd photo" accept="image/*" onchange="displayPreviewS(this.files);"/>
+	<p>The table down below is where you would encrypt an image!</p>
+	<span id="Stegg">
+
+		<!--<IMG BORDER=0 SRC="http://i.imgur.com/iexMg46.jpg" ALIGN="center"  style="max-width:100%;"/> -->
+	</span>
+	<br><br><br><br><br>
+	<div style="width:100%;">
+	<TABLE BORDER=1 BGCOLOR="#F0F0F0" align="center" style="width:80%;">
+		<TR>
+			<TD style="width:25%;"> 
+				<span id="preview">
+			
+					<!--<IMG BORDER=0 SRC="http://i.imgur.com/iexMg46.jpg" ALIGN="center"  style="max-width:100%;"/> -->
+				</span>
+			</TD>
+			<TD><span id="can"><canvas id="myCanvas">
+				
+			</canvas></span>
+			</TD>
+		</TR>
+		<TR>
+			<TD><input type="file" name="uneditedImage" value="Choose Image File" accept="image/*" onchange="displayPreview(this.files);"/></TD>
+			<TD><Area where text</TD>
+		</TR>
+		<TR><TD>
+			<span id="message"><textarea id="message" value="Input Message Here" style="width:95%; word-break:break-word;" placeholder="Input Message Here"></textarea></span></TD><!-- This was an input type:text. I am testing out textarea-->
+			<TD>
+			</TD>
+		</TR>
+	</TABLE>
+	</div>
+	<!-- qwadf -->
+</BODY>
+</HTML>
